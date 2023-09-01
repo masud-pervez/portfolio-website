@@ -19,7 +19,7 @@ export const About = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        {/* <Row className="sec_sp">
+        <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
           </Col>
@@ -66,7 +66,7 @@ export const About = () => {
               );
             })}
           </Col>
-        </Row> */}
+        </Row>
       </Container>
     </HelmetProvider>
   );
