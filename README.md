@@ -6,13 +6,10 @@
 
 <pre>yarn start</pre>
 
-**Build the web-page**
+**Build the web page**
 
 <pre>yarn build</pre>
 
-### More
-
-Modify pages content in `src/content_option.js`.
 
 ### Thanks!
 
