@@ -4,9 +4,12 @@ import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
+import logoDark from "../assets/logo-dark.png";
+import logoLight from "../assets/logo-light.png";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
+  const [theme] = useState(localStorage.getItem("theme"));
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -18,7 +21,11 @@ const Headermain = () => {
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center nav_ac justify-content-between">
           <Link className="navbar-brand nav_ac" to="/">
-            {logotext}
+            <img
+              className="logo"
+              src={theme !== "dark" ? logoDark : logoLight}
+              alt="logo"
+            />
           </Link>
           <div className="d-flex align-items-center">
             <Themetoggle />
