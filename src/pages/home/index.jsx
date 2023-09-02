@@ -18,7 +18,7 @@ export const Home = () => {
             className="h_bg-image order-1 lg:order-2 h-screen flex justify-center items-center z-0"
             // style={{ backgroundImage: `url(${introdata.your_img_url})` }}
           >
-            <div className="rounded-tl-full  rounded-br-3xl overflow-hidden">
+            <div className="rounded-tl-full cursor-zoom-in rounded-br-3xl overflow-hidden">
               <img
                 className="object-contain w-full rounded-md h-[70vh]"
                 src={introdata.your_img_url}
@@ -29,8 +29,8 @@ export const Home = () => {
           <div className="text order-2 lg:order-1 h-100 lg:flex justify-center">
             <div className="self-center">
               <div className="intro mx-auto">
-                <h2 className="mb-1x">{introdata.title}</h2>
-                <h1 className="fluidz-48 mb-1 typewriter-text">
+                <h2 className="text-3xl font-extrabold">{introdata.title}</h2>
+                <h1 className="fluidz-48 typewriter-text">
                   <Typewriter
                     options={{
                       strings: [
@@ -44,9 +44,9 @@ export const Home = () => {
                     }}
                   />
                 </h1>
-                <p className="mb-1x">{introdata.description}</p>
+                <p className="">{introdata.description}</p>
 
-                <div className="intro_btn-action pb-5">
+                <div className="intro_btn-action flex py-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_h" className="ac_btn btn ">
                       Projects

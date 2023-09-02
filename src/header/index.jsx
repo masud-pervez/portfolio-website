@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext, socialprofils } from "../content_option";
+import { socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 import logoDark from "../assets/logo-dark.png";
 import logoLight from "../assets/logo-light.png";
@@ -18,7 +18,7 @@ const Headermain = () => {
 
   return (
     <>
-      <header className="sticky top-0 bg-indigo-300 py-2 z-10">
+      <header className="fixed top-0 w-full z-10">
         <div className="flex items-center nav_ac justify-between">
           <Link className="navbar-brand nav_ac" to="/">
             <img
@@ -83,7 +83,7 @@ const Headermain = () => {
                 Github
               </a>
             </div>
-            <p className="copyright m-0">copyright {logotext}</p>
+            {/* <p className="copyright m-0">copyright {logotext}</p> */}
           </div>
         </div>
       </header>

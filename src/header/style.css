@@ -87,7 +87,7 @@
 
 .site__navigation {
   height: 100%;
-  left: 0;
+  right: 0;
   overflow: hidden;
   position: fixed;
   top: 0;
