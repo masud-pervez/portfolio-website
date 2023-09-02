@@ -154,7 +154,7 @@ const contactConfig = {
   YOUR_EMAIL: "masudpervez431@gmail.com",
   description: "Looking forward to hearing from you!",
   YOUR_SERVICE_ID: "service_u5ctclk",
-  YOUR_TEMPLATE_ID: "template_hdwfz8a",
+  YOUR_TEMPLATE_ID: "template_f6qd9xe",
   YOUR_USER_ID: "PVOhX9m7dHjANIr2s",
 };
 
