@@ -1,10 +1,10 @@
 /* global css sheet here */
 
 /* font family */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 /* root all pages */
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,77 +14,81 @@
   text-decoration: none;
 }
 /* variable color format */
-:root{
-  --color-bg:#1f1f38;
-  --color-bg-variant:#2c2c6c;
-  --color-primary:#4db5ff;
-  --color-primary-variant: rgba(77,181,255,0.4);
-  --color-white:#fff;
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
-  --transition:all 400ms ease;
+  --transition: all 400ms ease;
 }
 
 /* scroll bar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   background: var(--color-bg) !important;
   color: var(--color-white) !important;
   background-image: url(../src/assets/bg-texture.png) !important;
- }
+}
 
 /* ======== GENERAL style ======= */
-.container{
+.container {
   width: var(--container-width-lg);
-  margin: 0 auto; 
+  margin: 0 auto;
 }
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 500;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
 }
 
-section{
+section {
   margin-top: 3rem;
   margin-bottom: 10rem;
 }
 
-section > h2, 
-section > h5{
+section > h2,
+section > h5 {
   text-align: center;
   color: var(--color-light);
 }
 
-section > h2{
+section > h2 {
   color: var(--color-primary);
   margin-bottom: 3rem;
 }
 
-#portfolio{
+#portfolio {
   margin-bottom: 10rem !important;
 }
-.text-light{
+.text-light {
   color: var(--color-primary);
 }
-a{
+a {
   color: var(--color-primary);
   transition: var(--transition);
 }
-a:hover{
+a:hover {
   color: var(--color-white);
 }
-.btn{
+.btn {
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
@@ -94,67 +98,71 @@ a:hover{
   border: 1px solid var(--color-primary);
   transition: var(--transition);
 }
-.btn:hover{
+.btn:hover {
   background: var(--color-white);
   color: var(--color-bg);
   border-color: transparent;
 }
-.btn-primary{
+.btn-primary {
   background: var(--color-primary);
   color: var(--color-bg);
 }
-img{
+img {
   display: block;
   width: 100%;
   object-fit: cover;
 }
 /* MEDIA QUERIES (MEDIUM DEVICES) */
-@media screen and (max-width:1024px) {
-  .container{
+@media screen and (max-width: 1024px) {
+  .container {
     width: var(--container-width-md);
   }
-  selection{
+  selection {
     margin-top: 6rem;
   }
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) */
-@media screen and (max-width:600px) {
-  .container{
+@media screen and (max-width: 600px) {
+  .container {
     width: var(--container-width-sm);
   }
-  selection{
+  selection {
     margin-top: 2rem;
   }
 }
 
-.delete-btn{
+.delete-btn {
   padding: 1px;
   border: 1px solid #055160;
   border-radius: 2px;
   transition: all 0.1s;
   color: #055160;
-  cursor:pointer;
+  cursor: pointer;
 }
-.delete-btn:hover{
-  border-color: #F92F60;
-  color: #F92F60;
+.delete-btn:hover {
+  border-color: #f92f60;
+  color: #f92f60;
 }
 
-.edit-btn{
+.edit-btn {
   padding: 1px;
   border: 1px solid #055160;
   border-radius: 2px;
   transition: all 0.1s;
   color: #055160;
-  cursor:pointer;
+  cursor: pointer;
 }
-.edit-btn:hover{
+.edit-btn:hover {
   border-color: #2cc331;
   color: #2cc331;
 }
 
-.display-content:hover{
-  background: linear-gradient(90deg, rgba(122,226,170,1) 0%,  rgba(18,222,224,1) 100%);
-  transition:all 0.5s;
+.display-content:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(122, 226, 170, 1) 0%,
+    rgba(18, 222, 224, 1) 100%
+  );
+  transition: all 0.5s;
 }
