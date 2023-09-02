@@ -153,9 +153,9 @@ const dataportfolio = [
 const contactConfig = {
   YOUR_EMAIL: "masudpervez431@gmail.com",
   description: "Looking forward to hearing from you!",
-  YOUR_SERVICE_ID: "SERVICE_ID",
+  YOUR_SERVICE_ID: "service_u5ctclk",
   YOUR_TEMPLATE_ID: "template_hdwfz8a",
-  YOUR_USER_ID: "USER_ID (PUBLIC_KEY)",
+  YOUR_USER_ID: "PVOhX9m7dHjANIr2s",
 };
 
 const socialprofils = {
