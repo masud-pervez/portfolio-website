@@ -20,7 +20,7 @@ export const Home = () => {
           >
             <div className="rounded-tl-full cursor-zoom-in rounded-br-3xl overflow-hidden">
               <img
-                className="object-contain w-full rounded-md h-[70vh]"
+                className="object-contain w-full rounded-md h-[60vh]"
                 src={introdata.your_img_url}
                 alt=""
               />
@@ -37,6 +37,7 @@ export const Home = () => {
                         introdata.animated.first,
                         introdata.animated.second,
                         introdata.animated.third,
+                        introdata.animated.four,
                       ],
                       autoStart: true,
                       loop: true,
@@ -46,7 +47,7 @@ export const Home = () => {
                 </h1>
                 <p className="">{introdata.description}</p>
 
-                <div className="intro_btn-action flex py-5">
+                <div className="intro_btn-action flex justify-start items-center gap-0 py-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_h" className="ac_btn btn ">
                       Projects
@@ -57,7 +58,7 @@ export const Home = () => {
                   </Link>
                   <Link to="/about">
                     <div id="button_h" className="ac_btn btn">
-                      About Me
+                      About
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
@@ -65,7 +66,7 @@ export const Home = () => {
                   </Link>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
-                      Contact Me
+                      Contact
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>

@@ -16,42 +16,42 @@ export const Socialicons = () => {
         {socialprofils.twitter && (
           <li>
             <a target="blank" href={socialprofils.twitter}>
-              <FaTwitter />
+              <FaTwitter className="hover:fill-[#20ec53] hover:-translate-y-1 transition-all ease-in" />
             </a>
           </li>
         )}
         {socialprofils.github && (
           <li>
             <a target="blank" href={socialprofils.github}>
-              <FaGithub />
+              <FaGithub className="hover:fill-[#20ec53] hover:-translate-y-1 transition-all ease-in" />
             </a>
           </li>
         )}
         {socialprofils.facebook && (
           <li>
             <a target="blank" href={socialprofils.facebook}>
-              <FaFacebookF />
+              <FaFacebookF className="hover:fill-[#20ec53] hover:-translate-y-1 transition-all ease-in" />
             </a>
           </li>
         )}
         {socialprofils.linkedin && (
           <li>
             <a target="blank" href={socialprofils.linkedin}>
-              <FaLinkedin />
+              <FaLinkedin className="hover:fill-[#20ec53] hover:-translate-y-1 transition-all ease-in" />
             </a>
           </li>
         )}
         {socialprofils.youtube && (
           <li>
-            <a href={socialprofils.youtube}>
-              <FaYoutube />
+            <a target="blank" href={socialprofils.youtube}>
+              <FaYoutube className="hover:fill-[#20ec53] hover:-translate-y-1 transition-all ease-in" />
             </a>
           </li>
         )}
         {socialprofils.twitch && (
           <li>
-            <a href={socialprofils.twitch}>
-              <FaTwitch />
+            <a target="blank" href={socialprofils.twitch}>
+              <FaTwitch className="hover:fill-[#20ec53] hover:-translate-y-1 transition-all ease-in" />
             </a>
           </li>
         )}

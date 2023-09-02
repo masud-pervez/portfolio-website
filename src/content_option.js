@@ -9,8 +9,9 @@ const introdata = {
   title: "Hi, I'm Masud Pervez",
   animated: {
     first: "Web Developer",
-    second: "Android Developer",
+    second: "Web Designer",
     third: "UI/UX Designer",
+    four: "Frontend Developer",
   },
   description:
     "Dedicated technology enthusiast with an insatiable curiosity for unraveling the complexities of our digital world.",
@@ -161,7 +162,7 @@ const contactConfig = {
 const socialprofils = {
   github: "https://github.com/masud-pervez",
   linkedin: "https://www.linkedin.com/in/masud-pervez-71792b223/",
-  facebook: "",
+  facebook: "https://www.facebook.com/masud.pervez.31337",
 };
 export {
   meta,
