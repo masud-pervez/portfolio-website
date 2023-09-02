@@ -1,0 +1,60 @@
+
+/* ===== image ======= */
+.about_me{
+  width: 70%;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,transparent,
+    var(--color-primary-variant),
+    transparent
+  );
+  place-items: center;
+}
+
+.about_me-image{
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(9deg);
+  transition: var(--transition);
+}
+.about_me-image:hover{
+  transform: rotate(0deg);
+}
+/* ===== card ======= */
+#about p{
+  color: rgb(182, 195, 231);
+}
+.about_card{
+  background: var(--color-bg-variant);
+  border: 2px solid transparent;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+.about_card:hover{
+  background: transparent;
+  border-color: var(--color-bg-variant);
+  cursor: default;
+  transition: var(--transition);
+}
+.about_icon{
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about_cards h4{
+  font-size: 0.95rem;
+}
+.about_card small{
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.about_content p{
+  margin: 2rem 0 2.6rem;
+  color: var(--color-light)
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+
+/* ================================== end ================================= */

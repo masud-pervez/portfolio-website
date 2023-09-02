@@ -1,88 +1,160 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* global css sheet here */
 
-:root {
-  --bg-color: #202023;
-  --primary-color: #202023;
-  --secondary-color: #fff;
-  --text-color: #fff;
-  --text-color-2: #fff;
-  --text-color-3: rgb(204, 0, 0);
-  --overlay-color: rgb(12 12 12 / 63%);
-}
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-[data-theme="light"] {
-  --bg-color: #ffffff;
-  --primary-color: #ffffff;
-  --secondary-color: #000;
-  --text-color: #000;
-  --text-color-2: #000;
-  --text-color-3: rgb(204, 0, 0);
-  --overlay-color: rgb(255 255 255 / 70%);
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
+/* root all pages */
+*{
   margin: 0;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: visible;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-top: 60px;
-  border-left: 10px solid var(--primary-color);
-  border-right: 10px solid var(--primary-color);
-}
-
-ul {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
+}
+/* variable color format */
+:root{
+  --color-bg:#1f1f38;
+  --color-bg-variant:#2c2c6c;
+  --color-primary:#4db5ff;
+  --color-primary-variant: rgba(77,181,255,0.4);
+  --color-white:#fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --transition:all 400ms ease;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Roboto", sans-serif;
+/* scroll bar */
+::-webkit-scrollbar{
+  display: none;
+}
+html{
+  scroll-behavior: smooth;
 }
 
-a,
-a:hover {
-  color: var(--text-color);
+body{
+  font-family: 'Poppins', sans-serif;
+  background: var(--color-bg) !important;
+  color: var(--color-white) !important;
+  background-image: url(../src/assets/bg-texture.png) !important;
+ }
+
+/* ======== GENERAL style ======= */
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto; 
+}
+h1,h2,h3,h4,h5{
+  font-weight: 500;
 }
 
-p {
-  word-break: break-word;
-  hyphens: auto;
+h1{
+  font-size: 2.5rem;
 }
 
-.ovhidden {
-  overflow: hidden;
+section{
+  margin-top: 3rem;
+  margin-bottom: 10rem;
 }
 
-.text_2,
-.text_2:hover {
-  color: var(--text-color-2);
+section > h2, 
+section > h5{
+  text-align: center;
+  color: var(--color-light);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+section > h2{
+  color: var(--color-primary);
+  margin-bottom: 3rem;
 }
 
-.color_pr {
-  color: var(--primary-color) !important;
+#portfolio{
+  margin-bottom: 10rem !important;
+}
+.text-light{
+  color: var(--color-primary);
+}
+a{
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+a:hover{
+  color: var(--color-white);
+}
+.btn{
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+.btn:hover{
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+.btn-primary{
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+@media screen and (max-width:1024px) {
+  .container{
+    width: var(--container-width-md);
+  }
+  selection{
+    margin-top: 6rem;
+  }
 }
 
-.color_sec {
-  color: var(--secondary-color);
+/* MEDIA QUERIES (SMALL DEVICES) */
+@media screen and (max-width:600px) {
+  .container{
+    width: var(--container-width-sm);
+  }
+  selection{
+    margin-top: 2rem;
+  }
+}
+
+.delete-btn{
+  padding: 1px;
+  border: 1px solid #055160;
+  border-radius: 2px;
+  transition: all 0.1s;
+  color: #055160;
+  cursor:pointer;
+}
+.delete-btn:hover{
+  border-color: #F92F60;
+  color: #F92F60;
+}
+
+.edit-btn{
+  padding: 1px;
+  border: 1px solid #055160;
+  border-radius: 2px;
+  transition: all 0.1s;
+  color: #055160;
+  cursor:pointer;
+}
+.edit-btn:hover{
+  border-color: #2cc331;
+  color: #2cc331;
+}
+
+.display-content:hover{
+  background: linear-gradient(90deg, rgba(122,226,170,1) 0%,  rgba(18,222,224,1) 100%);
+  transition:all 0.5s;
 }

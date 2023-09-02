@@ -1,0 +1,75 @@
+header{
+  height: 100vh;
+  overflow: hidden;
+}
+.header_container{
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* ======= css animation ======== */
+.header_container h1{
+  font: 6rem;
+  padding: 20px 0;
+  letter-spacing: 5px;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+
+/* ========== CTA ========= */
+.cta{
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+/* ========== header social ========= */
+.header__socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+.header__socials::after{
+  content: '';
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+/* ========== ME ========= */
+.me{
+  background: linear-gradient(var(--color-primary-variant),transparent);
+  width: 24rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.me_image{
+  width: 28rem;
+}
+
+/* ========== Scroll bar ========= */
+.scroll_down{
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
