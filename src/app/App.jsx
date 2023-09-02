@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useEffect } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
@@ -16,8 +17,9 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
+  const path = "/";
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={path}>
       <ScrollToTop>
         <Headermain />
         <AppRoutes />

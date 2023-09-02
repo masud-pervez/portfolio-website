@@ -18,8 +18,8 @@ const Headermain = () => {
 
   return (
     <>
-      <header className="fixed-top site__header">
-        <div className="d-flex align-items-center nav_ac justify-content-between">
+      <header className="sticky top-0 bg-indigo-300 py-2 z-10">
+        <div className="flex items-center nav_ac justify-between">
           <Link className="navbar-brand nav_ac" to="/">
             <img
               className="logo"
@@ -27,7 +27,7 @@ const Headermain = () => {
               alt="logo"
             />
           </Link>
-          <div className="d-flex align-items-center">
+          <div className="flex items-center">
             <Themetoggle />
             <button className="menu__button  nav_ac" onClick={handleToggle}>
               {!isActive ? <VscClose /> : <VscGrabber />}
@@ -35,7 +35,11 @@ const Headermain = () => {
           </div>
         </div>
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
+        <div
+          className={`site__navigation dark:bg-slate-800 bg-slate-800 ${
+            !isActive ? "menu__opend" : ""
+          }`}
+        >
           <div className="bg__menu h-100">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
@@ -70,8 +74,8 @@ const Headermain = () => {
               </div>
             </div>
           </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
+          <div className="menu_footer flex flex-column md:flex-row justify-between md:items-md-center absolute w-100 p-3">
+            <div className="flex">
               <a target="blank" href={socialprofils.linkedin}>
                 LinkedIn
               </a>

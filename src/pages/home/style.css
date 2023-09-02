@@ -1,19 +1,19 @@
-section {
+/* section {
     flex: 1 0 auto;
     position: relative;
     width: 100%;
     -webkit-transition: all .5s ease-in;
     -o-transition: all .5s ease-in;
     transition: all .5s ease-in;
-}
+} */
 
-.who_am_I {
+/* .who_am_I {
     font-family: 'Roboto', sans-serif;
-}
+} */
 
-.has-first-color {
+/* .has-first-color {
     color: var(--primary-color);
-}
+} */
 
 .btn-portfolio {
     background: var(--primary-color);
