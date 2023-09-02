@@ -13,8 +13,8 @@
 }
 
 [data-theme="light"] {
-  --bg-color: #ffffff;
-  --primary-color: #ffffff;
+  --bg-color: #e9e7e4da;
+  --primary-color: #e9e7e4da;
   --secondary-color: #000;
   --text-color: #000;
   --text-color-2: #000;
@@ -85,4 +85,25 @@ code {
 
 .color_sec {
   color: var(--secondary-color);
+}
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3b3838;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

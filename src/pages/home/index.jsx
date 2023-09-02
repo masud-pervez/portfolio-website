@@ -14,16 +14,14 @@ export const Home = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec block lg:flex items-center">
-          <div
-            className="h_bg-image order-1 lg:order-2 h-screen flex justify-center items-center z-0"
-            // style={{ backgroundImage: `url(${introdata.your_img_url})` }}
-          >
-            <div className="rounded-tl-full cursor-zoom-in rounded-br-3xl overflow-hidden">
+          <div className="h_bg-image order-1 lg:order-2 h-screen flex justify-center items-center z-0">
+            <div className="group  relative rounded-3xl bg-rose-200 z-50 overflow-hidden">
               <img
-                className="object-contain w-full rounded-md h-[60vh]"
+                className="object-contain group-hover:scale-125 object-center transition-all ease-in-out delay-75 duration-300 w-full rounded-md z-10 h-[55vh]"
                 src={introdata.your_img_url}
                 alt=""
               />
+              <div className="absolute bg-slate-900 opacity-25 group-hover:opacity-0 transition-all ease-in-out delay-75 duration-300 w-full py-5 blur-xl h-[55vh] bottom-0 left-0"></div>
             </div>
           </div>
           <div className="text order-2 lg:order-1 h-100 lg:flex justify-center">
