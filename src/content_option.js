@@ -3,6 +3,7 @@ const logotext = "{Initials Here}";
 const meta = {
   title: "Masud Pervez",
   description: "I'm Masud Pervez, a technologist and cybersecurity enthuist.",
+  designation: "Web Software Develper",
 };
 
 const introdata = {

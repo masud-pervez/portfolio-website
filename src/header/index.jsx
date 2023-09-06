@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 import logoDark from "../assets/logo-dark.png";
@@ -10,6 +10,8 @@ import logoLight from "../assets/logo-light.png";
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
   const [theme] = useState(localStorage.getItem("theme"));
+
+  const { pathname } = useLocation();
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -40,32 +42,59 @@ const Headermain = () => {
             !isActive ? "menu__opend" : ""
           }`}
         >
-          <div className="bg__menu h-100">
+          <div className="bg__menu h-screen">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
-                  <li className="menu_item active">
-                    <Link onClick={handleToggle} to="/" className="my-3">
+                  <li className="my-10">
+                    <Link
+                      onClick={handleToggle}
+                      to="/"
+                      className={`my-10 ${
+                        pathname === "/"
+                          ? "text-rose-400 hover:text-rose-400"
+                          : "hover:text-rose-400"
+                      } text-8xl`}
+                    >
                       Home
                     </Link>
                   </li>
-                  <li className="menu_item">
+                  <li className="my-10">
                     <Link
                       onClick={handleToggle}
-                      to="/portfolio"
-                      className="my-3"
+                      to="/about"
+                      className={`my-10 ${
+                        pathname === "/about"
+                          ? "text-rose-400 hover:text-rose-400"
+                          : "hover:text-rose-400"
+                      } text-8xl`}
                     >
-                      {" "}
-                      Portfolio
-                    </Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/about" className="my-3">
                       About
                     </Link>
                   </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/contact" className="my-3">
+                  <li className="my-10">
+                    <Link
+                      onClick={handleToggle}
+                      to="/portfolio"
+                      className={`my-10 ${
+                        pathname === "/portfolio"
+                          ? "text-rose-400 hover:text-rose-400"
+                          : "hover:text-rose-400"
+                      } text-8xl`}
+                    >
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li className="my-10">
+                    <Link
+                      onClick={handleToggle}
+                      to="/contact"
+                      className={`my-10 ${
+                        pathname === "/contact"
+                          ? "text-rose-400 hover:text-rose-400"
+                          : "hover:text-rose-400"
+                      } text-8xl`}
+                    >
                       {" "}
                       Contact
                     </Link>

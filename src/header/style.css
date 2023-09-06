@@ -1,9 +1,3 @@
-/* .site__header {
-    top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-} */
-
 .menu__button {
   color: var(--text-color);
 }
@@ -35,9 +29,9 @@
   z-index: 1000;
 }
 
-.nav_ac:hover {
+/* .nav_ac:hover {
   color: var(--text-color-2);
-}
+} */
 
 .br-top,
 .br-bottom,
@@ -187,10 +181,10 @@
   font-family: "Roboto", sans-serif;
 }
 
-.the_menu .menu_item > a:hover,
+/* .the_menu .menu_item > a:hover,
 .active {
   color: var(--text-color-3);
-}
+} */
 
 @media (min-width: 768px) {
   .the_menu .menu_item > a {
