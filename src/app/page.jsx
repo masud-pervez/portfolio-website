@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <main>
       <Header />
-      <div className="container mx-auto lg:min-h-[75vh]  min-h-[90vh] flex items-center md:w-3/5 w-full md:px-0 px-5">
+      <div className="container mx-auto lg:min-h-[80vh]  min-h-[90vh] flex items-center md:w-3/5 w-full md:px-0 px-5">
         <div>
           <code className="md:text-2xl text-xl text-color">Hi, my name is</code>
           <h1 className="text-[#ccd6f6] lg:text-7xl md:text-5xl text-3xl my-5 font-bold">

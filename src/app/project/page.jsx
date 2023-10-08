@@ -16,8 +16,8 @@ const Project = () => {
         <div className="overflow-x-auto">
           <table className="table my-5">
             {/* head */}
-            <thead className="sticky top-0 backdrop-blur-lg">
-              <tr className="sticky top-0 backdrop-blur-lg text-sm text-white">
+            <thead className="sticky top-5 backdrop-blur-lg">
+              <tr className="text-sm text-white">
                 <th style={{ minWidth: "10%" }}>Year</th>
                 <th style={{ minWidth: "20%" }}>Project</th>
                 <th style={{ minWidth: "20%" }}>Made At</th>

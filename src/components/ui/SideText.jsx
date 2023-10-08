@@ -5,23 +5,25 @@ import config from "@/config/config";
 const SideText = () => {
   return (
     <div className="md:block hidden">
-      <div className="absolute flex flex-row gap-4 vertical-rl bottom-5 left-48">
+      <div className="absolute gamil-link flex flex-row gap-5 vertical-rl bottom-5 left-10">
         {config.social.map((item, idx) => {
           return (
             <Link
               key={idx}
               href={item.link}
-              className="hover:pb-2 transition-all duration-100 delay-75"
+              className="hover:-translate-y-2 transition-all duration-100 delay-75"
             >
-              <item.icon className="hover:text-cyan-500" size={25} />
+              <item.icon className="hover:text-cyan-500" size={20} />
             </Link>
           );
         })}
       </div>
-      <div className="absolute hover:pb-2 transition-all duration-100 delay-75 vertical-rl bottom-5 right-48">
-        <Link href="" className="hover:text-cyan-500">
-          {config.email}
-        </Link>
+      <div className="absolute transition-all duration-100 delay-75 vertical-rl bottom-5 right-10">
+        <div className="gamil-link flex items-center gap-5 ">
+          <Link href="" className="hover:text-cyan-500 hover:-translate-y-2">
+            {config.email}
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import {
   AiFillFacebook,
-  AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
+
+import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 
 const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
 const apiBaseUrl =
@@ -32,12 +33,12 @@ const config = {
   social: [
     {
       name: "Github",
-      icon: AiFillGithub,
+      icon: FiGithub,
       link: "https://github.com/masud-pervez",
     },
     {
       name: "Linkedin",
-      icon: AiFillLinkedin,
+      icon: FiLinkedin,
       link: "https://www.linkedin.com/in/masud-pervez-/",
     },
     {
@@ -47,7 +48,7 @@ const config = {
     },
     {
       name: "Instagram",
-      icon: AiFillInstagram,
+      icon: FiInstagram,
       link: "https://www.instagram.com/_masud_pervez_/",
     },
   ],

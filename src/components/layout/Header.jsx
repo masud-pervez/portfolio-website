@@ -1,12 +1,17 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineAlignRight } from "react-icons/ai";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
+  console.log("pathname:", pathname);
+
   return (
-    <header className="backdrop-blur py-2">
-      <nav className="container mx-auto sticky top-0 flex md:px-0 px-5 justify-between items-center">
+    <header className="fixed top-0 w-full z-50 backdrop-blur py-2">
+      <nav className="container-fluid mx-auto flex px-5 justify-between items-center">
         <Link href="/">
           <Image src="/logo-light.png" height={45} width={45} alt="logo" />
         </Link>
@@ -17,9 +22,13 @@ const Header = () => {
           <ul className="inline-block m-0 p-0 ms-auto">
             <li className="inline-block ms-5">
               <code>
-                <span className="text-color">01.</span>
+                <span className="text-info">01.</span>
                 <Link
-                  className="hover:text-cyan-500 text-slate-200"
+                  className={`${
+                    pathname === "/about"
+                      ? "text-info"
+                      : "hover:text-info text-base-content"
+                  }`}
                   href="/about"
                 >
                   About
@@ -28,10 +37,14 @@ const Header = () => {
             </li>
             <li className="inline-block ms-5">
               <code>
-                <span className="text-color">02.</span>
+                <span className="text-info">02.</span>
                 <Link
-                  className="hover:text-cyan-500 text-slate-200"
-                  href="/about"
+                  className={`${
+                    pathname === "/experience"
+                      ? "text-info"
+                      : "hover:text-info text-base-content"
+                  }`}
+                  href="/experience"
                 >
                   Experience
                 </Link>
@@ -39,10 +52,14 @@ const Header = () => {
             </li>
             <li className="inline-block ms-5">
               <code>
-                <span className="text-color">03.</span>
+                <span className="text-info">03.</span>
                 <Link
-                  className="hover:text-cyan-500 text-slate-200"
-                  href="/about"
+                  className={`${
+                    pathname === "/work"
+                      ? "text-info"
+                      : "hover:text-info text-base-content"
+                  }`}
+                  href="/work"
                 >
                   Work
                 </Link>
@@ -50,17 +67,21 @@ const Header = () => {
             </li>
             <li className="inline-block ms-5">
               <code>
-                <span className="text-color">04.</span>
+                <span className="text-info">04.</span>
                 <Link
-                  className="hover:text-cyan-500 text-slate-200"
-                  href="/about"
+                  className={`${
+                    pathname === "/contact"
+                      ? "text-info"
+                      : "hover:text-info text-base-content"
+                  }`}
+                  href="/contact"
                 >
                   Contact
                 </Link>
               </code>
             </li>
             <li className="inline-block ms-5">
-              <code className="outline rounded outline-cyan-500 text-cyan-500 p-2 ">
+              <code className="outline rounded outline-cyan-500 text-info p-2 ">
                 Resume
               </code>
             </li>

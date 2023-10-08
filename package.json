@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/parallax": "^9.7.3",
+    "@react-spring/web": "^9.7.3",
     "next": "13.5.4",
     "react": "^18",
     "react-animated-cursor": "^2.10.1",
@@ -16,6 +18,8 @@
     "react-icons": "^4.11.0"
   },
   "devDependencies": {
+    "@types/node": "20.8.3",
+    "@types/react": "18.2.25",
     "autoprefixer": "^10",
     "daisyui": "^3.9.2",
     "eslint": "^8",
