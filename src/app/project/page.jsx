@@ -1,8 +1,9 @@
-import config from "@/config/config";
 import React from "react";
-import { BiLeftArrowAlt } from "react-icons/bi";
 import Link from "next/link";
-import projectData from "@/config/projectData";
+import config from "../../config/config";
+import projectData from "../../config/projectData";
+
+import { BiLeftArrowAlt } from "react-icons/bi";
 
 const Project = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import config from "@/config/config";
+import config from "../../config/config";
 
 const SideText = () => {
   return (

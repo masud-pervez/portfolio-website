@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-import config from "@/config/config";
-import Header from "@/components/layout/Header";
-import SideText from "@/components/ui/SideText";
+import config from "../config/config";
+import Header from "../components/layout/Header";
+import SideText from "../components/ui/SideText";
 
 const Home = () => {
   return (

@@ -1,9 +1,9 @@
 "use client";
 import React, { useRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import Header from "@/components/layout/Header";
-import { BiArrowToRight } from "react-icons/bi";
 import Image from "next/image";
+import Header from "../../components/layout/Header";
+import { BiArrowToRight } from "react-icons/bi";
 
 // Little helpers ...
 

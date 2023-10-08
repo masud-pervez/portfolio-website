@@ -1,9 +1,7 @@
-import config from "@/config/config";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Header from "@/components/layout/Header";
 const inter = Inter({ subsets: ["latin"] });
-// import AnimatedCursor from "react-animated-cursor";
+import config from "../config/config";
 
 export const metadata = {
   title: config.title,
@@ -24,7 +22,6 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo.png" sizes="any" />
       </head>
       <body className={inter.className}>
-        {/* <AnimatedCursor /> */}
         <div className="z-10 flex flex-col min-h-screen">
           <main className="flex-grow relative">{children}</main>
         </div>
