@@ -6,11 +6,12 @@ import { BiArrowToRight } from "react-icons/bi";
 import Image from "next/image";
 
 // Little helpers ...
-const url = (name, wrap = false) =>
-  `${wrap ? "url(" : ""}/${name}.svg${wrap ? ")" : ""}`;
 
 export default function About() {
   const parallax = useRef(null);
+
+  const url = (name, wrap = false) =>
+    `${wrap ? "url(" : ""}/${name}.svg${wrap ? ")" : ""}`;
 
   return (
     <main>
