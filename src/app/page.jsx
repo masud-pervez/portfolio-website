@@ -29,9 +29,7 @@ const Home = () => {
           </p>
 
           <Link href="/project">
-            <button className="outline rounded outline-cyan-500 text-cyan-500 p-2 ">
-              Check Out My Projects
-            </button>
+            <button className="bn5">Check Out My Projects</button>
           </Link>
         </div>
         <SideText />
