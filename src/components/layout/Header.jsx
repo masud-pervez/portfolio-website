@@ -7,7 +7,18 @@ import { usePathname } from "next/navigation";
 
 const Header = () => {
   const pathname = usePathname();
-  console.log("pathname:", pathname);
+
+  const handleDownloadClick = () => {
+    const resumeUrl =
+      (process.env.PUBLIC_URL || "http://localhost:3000/") + "/resume.pdf";
+
+    const a = document.createElement("a");
+    a.href = resumeUrl;
+    a.download = "resume.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
 
   return (
     <header className="fixed top-0 w-full z-50 backdrop-blur py-2">
@@ -81,7 +92,9 @@ const Header = () => {
               </code>
             </li>
             <li className="inline-block ms-5">
-              <code className="bn5">Resume</code>
+              <code onClick={handleDownloadClick} className="bn5">
+                Resume
+              </code>
             </li>
           </ul>
         </div>
