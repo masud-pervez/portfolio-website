@@ -81,9 +81,7 @@ const Header = () => {
               </code>
             </li>
             <li className="inline-block ms-5">
-              <code className="outline rounded outline-cyan-500 text-info p-2 ">
-                Resume
-              </code>
+              <code className="bn5">Resume</code>
             </li>
           </ul>
         </div>
