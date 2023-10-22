@@ -10,7 +10,8 @@ const Header = () => {
 
   const handleDownloadClick = () => {
     const resumeUrl =
-      (process.env.PUBLIC_URL || "http://localhost:3000/") + "/resume.pdf";
+      ("https://masud-pervez.vercel.app" || "https://localhost:3000") +
+      "/resume.pdf";
 
     const a = document.createElement("a");
     a.href = resumeUrl;
