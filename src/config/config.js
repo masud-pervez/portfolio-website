@@ -1,8 +1,4 @@
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillFacebook } from "react-icons/ai";
 
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 
@@ -13,7 +9,7 @@ const apiBaseUrl =
 const config = {
   name: "Masud Pervez",
   title: "Masud Pervez",
-  description: "Masud Pervez",
+  description: "Turning Code into Creative Conquests: Your Web, Our Expertise.",
   url: siteUrl,
   apiBaseUrl,
   ogImage: `${siteUrl}/opengraph-image`,
@@ -24,6 +20,14 @@ const config = {
   links: {
     linkedIn: "https://www.linkedin.com/in/masud-pervez-/",
     github: "https://github.com/masud-pervez",
+  },
+  introdata: {
+    animated: {
+      first: "Software Engineer",
+      second: "Competitive Programmer",
+      third: "UI/UX Designer",
+      four: "Web Developer",
+    },
   },
   email: "masudpervez431@gmail.com",
   CurrentCompany: {

@@ -1,163 +1,112 @@
-"use client";
-import React, { useRef } from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import Image from "next/image";
-import Header from "../../components/layout/Header";
-import { BiArrowToRight } from "react-icons/bi";
+import React from "react";
 
-// Little helpers ...
-
-export default function About() {
-  const parallax = useRef(null);
-
-  const url = (name, wrap = false) =>
-    `${wrap ? "url(" : ""}/${name}.svg${wrap ? ")" : ""}`;
-
+const page = () => {
   return (
-    <main>
-      <Header />
-      <div className="bg-base-200">
-        <Parallax ref={parallax} pages={2}>
-          <ParallaxLayer offset={1} speed={1} className="bg-info opacity-20" />
-
-          <ParallaxLayer
-            offset={0}
-            speed={0}
-            factor={3}
-            style={{
-              backgroundImage: url("stars", true),
-              backgroundSize: "cover",
-            }}
-          />
-
-          <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
+    <div>
+      <ul class="group/list">
+        <li class="mb-12">
+          <div class="group relative grid grid-cols-8 gap-4 transition-all sm:items-center sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+            <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
             <img
-              src={url("cloud")}
-              style={{ display: "block", width: "20%", marginLeft: "55%" }}
+              alt="Telescope"
+              loading="lazy"
+              width="200"
+              height="48"
+              decoding="async"
+              data-nimg="1"
+              class="z-10 col-span-2 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2"
+              style="color:transparent"
+              srcset="/_next/image?url=%2Fimages%2Fwriting%2Falgolia-search.jpeg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fwriting%2Falgolia-search.jpeg&amp;w=640&amp;q=75 2x"
+              src="/_next/image?url=%2Fimages%2Fwriting%2Falgolia-search.jpeg&amp;w=640&amp;q=75"
             />
-            <img
-              src={url("cloud")}
-              style={{ display: "block", width: "10%", marginLeft: "15%" }}
-            />
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
-            <img
-              src={url("cloud")}
-              style={{ display: "block", width: "20%", marginLeft: "70%" }}
-            />
-            <img
-              src={url("cloud")}
-              style={{ display: "block", width: "20%", marginLeft: "40%" }}
-            />
-          </ParallaxLayer>
-          <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
-            <img
-              src={url("cloud")}
-              style={{ display: "block", width: "10%", marginLeft: "10%" }}
-            />
-            <img
-              src={url("cloud")}
-              style={{ display: "block", width: "20%", marginLeft: "75%" }}
-            />
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
-            <img
-              src={url("cloud")}
-              style={{ display: "block", width: "20%", marginLeft: "60%" }}
-            />
-            <img
-              src={url("cloud")}
-              style={{ display: "block", width: "25%", marginLeft: "30%" }}
-            />
-            <img
-              src={url("cloud")}
-              style={{ display: "block", width: "10%", marginLeft: "80%" }}
-            />
-          </ParallaxLayer>
-
-          <ParallaxLayer
-            offset={0}
-            speed={0.1}
-            onClick={() => parallax.current.scrollTo(1)}
-            className="flex items-center justify-center"
-          >
-            <div className="h-96 grid grid-cols-2 gap-10 items-center lg:w-3/5 w-full">
-              <div className="md:col-span-1 col-span-2 flex md:items-center items-center justify-center">
-                <Image
-                  className="bg-gradient-to-tr from-primary to-info rounded-md"
-                  src="/masud.png"
-                  width={200}
-                  height={200}
-                  alt=""
-                />
-              </div>
-              <div className="md:col-span-1 col-span-2 px-5 md:px-0">
-                <code className="text-3xl text-base-content line-arrow font-bold">
-                  About Me
-                </code>
-                <p className="text-lg my-3">
-                  Hello! My name is Masud Pervez and I enjoy creating things
-                  that live on the internet. My interest in web development
-                  started back in 2020.
-                </p>
-                <p className="text-lg my-3">
-                  Hello! My name is Masud Pervez and I enjoy creating things
-                  that live on the internet. My interest in web development
-                  started back in 2020.
-                </p>
-                <p className="text-lg my-3">
-                  Here are a few technologies I’ve been working with recently:
-                  <div className="flex items-center gap-x-10 my-3">
-                    <ul className="">
-                      <li className="about-icon">
-                        <BiArrowToRight />
-                        <code className="text-sm">JavaScript (ES6+)</code>
-                      </li>
-                      <li className="about-icon">
-                        <BiArrowToRight />
-                        <code className="text-sm">React</code>
-                      </li>
-                      <li className="about-icon">
-                        <BiArrowToRight />
-                        <code className="text-sm">Node.js</code>
-                      </li>
-                    </ul>
-                    <ul className="">
-                      <li className="about-icon">
-                        <BiArrowToRight />
-                        <code className="text-sm">TypeScript</code>
-                      </li>
-                      <li className="about-icon">
-                        <BiArrowToRight />
-                        <code className="text-sm">PgAdmin</code>
-                      </li>
-                      <li className="about-icon">
-                        <BiArrowToRight />
-                        <code className="text-sm">Nest.js</code>
-                      </li>
-                    </ul>
-                  </div>
-                </p>
-              </div>
+            <div class="z-10 col-span-6">
+              <p class="-mt-1 text-sm font-semibold leading-6">2020</p>
+              <h3 class="-mt-1">
+                <a
+                  class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                  href="https://upstatement.com/blog/integrating-algolia-search-with-wordpress-multisite/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Integrating Algolia Search with WordPress Multisite (opens in a new tab)"
+                >
+                  <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                  <span>
+                    Integrating Algolia Search with WordPress
+                    <span class="inline-block">
+                      Multisite
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </h3>
             </div>
-          </ParallaxLayer>
-
-          <ParallaxLayer
-            offset={1}
-            speed={0.1}
-            onClick={() => parallax.current.scrollTo(0)}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <img src={url("bash")} style={{ width: "40%" }} />
-          </ParallaxLayer>
-        </Parallax>
-      </div>
-    </main>
+          </div>
+        </li>
+        <li class="mb-12">
+          <div class="group relative grid grid-cols-8 gap-4 transition-all sm:items-center sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+            <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+            <img
+              alt="Headless horseamn"
+              loading="lazy"
+              width="200"
+              height="48"
+              decoding="async"
+              data-nimg="1"
+              class="z-10 col-span-2 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2"
+              style="color:transparent"
+              srcset="/_next/image?url=%2Fimages%2Fwriting%2Fheadless.jpeg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fwriting%2Fheadless.jpeg&amp;w=640&amp;q=75 2x"
+              src="/_next/image?url=%2Fimages%2Fwriting%2Fheadless.jpeg&amp;w=640&amp;q=75"
+            />
+            <div class="z-10 col-span-6">
+              <p class="-mt-1 text-sm font-semibold leading-6">2019</p>
+              <h3 class="-mt-1">
+                <a
+                  class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                  href="https://upstatement.com/blog/building-a-headless-mobile-app-cms-from-scratch/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Building a Headless Mobile App CMS From Scratch (opens in a new tab)"
+                >
+                  <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                  <span>
+                    Building a Headless Mobile App CMS From{" "}
+                    <span class="inline-block">
+                      Scratch
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </h3>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
   );
-}
+};
+
+export default page;

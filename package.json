@@ -15,7 +15,8 @@
     "react": "^18",
     "react-animated-cursor": "^2.10.1",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/node": "20.8.3",
