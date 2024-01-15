@@ -28,16 +28,14 @@ const ExperienceSection = () => {
                 <div className="z-10 sm:col-span-6">
                   <h3 className="font-medium leading-snug text-slate-200">
                     <div>
-                      <a
-                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                        href="https://upstatement.com"
+                      <Link
+                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-emerald-300 focus-visible:text-emerald-300  group/link text-base"
+                        href={item.link}
                         target="_blank"
                         rel="noreferrer noopener"
-                        aria-label="Lead Engineer at Upstatement (opens in a new tab)"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
-                          {/* Lead Engineer ·{" "} */}
                           <span className="inline-block">
                             {item.company}
                             <svg
@@ -55,7 +53,7 @@ const ExperienceSection = () => {
                             </svg>
                           </span>
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div>
                       <div className="text-slate-500" aria-hidden="true">
@@ -72,7 +70,7 @@ const ExperienceSection = () => {
                   >
                     {item.skill.map((item, idx) => (
                       <li key={idx} className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                        <div className="flex items-center rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-medium leading-5 text-emerald-300 ">
                           {item}
                         </div>
                       </li>
@@ -85,7 +83,7 @@ const ExperienceSection = () => {
         </ol>
         <div className="mt-12">
           <a
-            className="inline-flex items-baseline leading-tight  hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
+            className="inline-flex items-baseline leading-tight  hover:text-emerald-300 focus-visible:text-emerald-300 font-semibold text-slate-200 group/link text-base"
             href="/resume.pdf"
             target="_blank"
             rel="noreferrer noopener"

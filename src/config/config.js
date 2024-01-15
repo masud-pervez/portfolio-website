@@ -6,7 +6,7 @@ const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
 const apiBaseUrl =
   process.env.NEXT_PUBLIC_BASE_API_URL || "http://localhost:3900";
 
-const config = {
+const appConfig = {
   name: "Masud Pervez",
   title: "Masud Pervez",
   description: "Turning Code into Creative Conquests: Your Web, Our Expertise.",
@@ -90,6 +90,32 @@ const config = {
       ],
     },
   ],
+  projects: [
+    {
+      name: "Inventory Management System",
+      link: "http://74.48.84.166:3000/#/dashboard",
+      img: "/project/inventory.png",
+      desc: `The primary objective of an Inventory Management System is to ensure that a company maintains optimal levels of inventory. This involves ensuring that there is sufficient stock on hand to meet customer demand while minimizing excess or obsolete inventory that could lead to capital being tied up.`,
+    },
+    {
+      name: "Office ERP Management System",
+      link: "https://office-linker.vercel.app",
+      img: "/project/office.jpeg",
+      desc: `ERP systems are typically used to integrate and manage core business
+      functions such as finance, human resources, supply chain management,
+      project management, and more. These systems provide a centralized
+      platform for data and process management, offering real-time visibility
+      into an organization's operations and facilitating data-driven`,
+    },
+    {
+      name: "School Management System",
+      link: "http://74.48.84.166:3000/#/dashboard",
+      img: "/project/school.jpeg",
+      desc: `These systems are used to manage various aspects of school operations,
+      including student information, staff management, financial management,
+      and communication.`,
+    },
+  ],
 };
 
-export default config;
+export default appConfig;

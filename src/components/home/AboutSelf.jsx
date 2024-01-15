@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import config from "../../config/config";
+import appConfig from "../../config/config";
 
 const AboutSelf = () => {
   return (
@@ -27,11 +27,11 @@ const AboutSelf = () => {
           At present, I am fully dedicated to spearheading various projects and
           creating cutting-edge products for our esteemed client base at{" "}
           <Link
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            href={config.CurrentCompany.link}
+            className="font-medium text-slate-200 hover:text-violet-300 focus-visible:text-violet-300"
+            href={appConfig.CurrentCompany.link}
             target="_blank"
           >
-            {config.CurrentCompany.name}
+            {appConfig.CurrentCompany.name}
           </Link>
           . During my leisure time, I am passionately engaged in augmenting my
           knowledge about the latest technological advancements to stay
@@ -40,11 +40,11 @@ const AboutSelf = () => {
         <p>
           When {"I'm"} not sitting in front of my computer screen, I like to
           engage in physical activities such as playing{" "}
-          <span className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
+          <span className="font-medium text-slate-200 hover:text-violet-300 focus-visible:text-violet-300">
             cricket
           </span>{" "}
           and{" "}
-          <span className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
+          <span className="font-medium text-slate-200 hover:text-violet-300 focus-visible:text-violet-300">
             swimming
           </span>
           . These sports help me stay fit and active, while also giving me a
@@ -86,7 +86,7 @@ const AboutSelf = () => {
               c
             </span>
             <span
-              className="group-hover/korok:text-cyan-400 transition duration-75 group-hover/korok:-translate-y-px delay-[200ms]"
+              className="group-hover/korok:text-emerald-400 transition duration-75 group-hover/korok:-translate-y-px delay-[200ms]"
               aria-hidden="true"
             >
               e
