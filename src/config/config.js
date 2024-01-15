@@ -56,6 +56,40 @@ const config = {
       link: "https://www.instagram.com/_masud_pervez_/",
     },
   ],
+  experience: [
+    {
+      company: "Semicolon It Solutions",
+      link: "https://semicolonit.com/",
+      date: "May 2022 - Present",
+      designetion: "Web Developer",
+      description: `Write effective, well-tested and readable code in Node.js and React.js. Collaborate with other engineers in an agile cross-functional team to ensure successful completion of work.`,
+      skill: [
+        "React js",
+        "Redux",
+        "Vite",
+        "React Native",
+        "Next js",
+        "Nest Js",
+        "PostgreSQL",
+      ],
+    },
+    {
+      company: "Semicolon It Solutions",
+      link: "https://semicolonit.com/",
+      date: "Nov 2021 - Apr 2022",
+      designetion: "Internship",
+      description: `A solid work ethic .A collaborative work personality. Possesses
+      problem-solving, analytical and logical skills.`,
+      skill: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Tailwind Css",
+        "Bootstrap",
+        "MongoDB",
+      ],
+    },
+  ],
 };
 
 export default config;

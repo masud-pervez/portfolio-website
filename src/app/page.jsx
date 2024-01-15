@@ -18,10 +18,10 @@ const Home = () => {
   };
 
   const handleDownloadClick = () => {
-    const resumeUrl = config.url + "/cv/academic-resume.pdf";
+    const resumeUrl = config.url + "/resume.pdf";
     const a = document.createElement("a");
     a.href = resumeUrl;
-    a.download = "academic-resume.pdf";
+    a.download = "resume.pdf";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -30,13 +30,13 @@ const Home = () => {
   return (
     <main>
       <section
-        className="relative overflow-hidden"
+        className="relative lg:overflow-hidden"
         onMouseMove={handleMouseMove}
       >
         <div className="mx-auto container max-h-screen lg:w-3/5">
           <div className="grid grid-cols-12 gap-5">
-            <div className="col-span-12 flex h-screen flex-col justify-between py-10 lg:col-span-5">
-              <div>
+            <div className="col-span-12 flex lg:max-h-screen flex-col justify-between py-10 lg:col-span-5">
+              <div className="lg:text-start text-center">
                 <Image
                   height={300}
                   width={300}
@@ -62,7 +62,7 @@ const Home = () => {
                     }}
                   />
                 </div>
-                <p className="w-4/5 text-gray-400">{config.description}</p>
+                <p className="lg:w-4/5 text-gray-400">{config.description}</p>
 
                 <ul className="mt-5 w-max">
                   <li>
@@ -123,16 +123,14 @@ const Home = () => {
                 </code>
               </div>
             </div>
-            <main className="col-span-12 max-h-screen overflow-auto scroll-smooth lg:col-span-7">
+            <main className="col-span-12 max-h-screen lg:overflow-auto scroll-smooth lg:col-span-7">
               <AboutSelf />
               <ExperienceSection />
-              {/* <ProjectSection /> */}
             </main>
           </div>
           <Tracker position={position} />
           <div className="absolute bottom-44 left-64 hidden h-[150px] w-[900px] -rotate-45 rounded-3xl bg-gradient-to-r from-violet-600 to-indigo-800 opacity-30 blur-3xl filter dark:block lg:-left-20 lg:bottom-24 lg:h-28 lg:w-[250px] lg:-rotate-12 lg:animate-pulse lg:opacity-20 xl:h-40 xl:w-[400px]"></div>
           <div className="absolute top-10 -right-10 hidden h-[150px] w-[900px] -rotate-45 rounded-3xl bg-gradient-to-l from-purple-600 to-purple-400 opacity-30 blur-3xl filter dark:block lg:-right-20 lg:bottom-24 lg:h-28 lg:w-[250px] lg:-rotate-12 lg:animate-pulse lg:opacity-20 xl:h-40 xl:w-[400px]"></div>
-          {/* <div className="absolute right-[28%] top-0 hidden h-[150px] w-[200px] rotate-12 rounded-3xl bg-gradient-to-l from-blue-600 to-sky-400 opacity-10 blur-3xl filter dark:block dark:opacity-10 lg:top-24 lg:-right-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[500px]"></div> */}
         </div>
       </section>
     </main>
