@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import Image from "next/image";
 
 const ProjectSection = () => {
   return (
@@ -14,7 +14,7 @@ const ProjectSection = () => {
           <li className="mb-12">
             <div className="group relative grid grid-cols-8 gap-4 transition-all sm:items-center sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
               <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-              <img
+              {/* <Image
                 alt="Telescope"
                 loading="lazy"
                 width="200"
@@ -25,7 +25,7 @@ const ProjectSection = () => {
                 // style="color:transparent"
                 srcset="/_next/image?url=%2Fimages%2Fwriting%2Falgolia-search.jpeg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fwriting%2Falgolia-search.jpeg&amp;w=640&amp;q=75 2x"
                 src="/_next/image?url=%2Fimages%2Fwriting%2Falgolia-search.jpeg&amp;w=640&amp;q=75"
-              />
+              /> */}
               <div className="z-10 col-span-6">
                 <p className="-mt-1 text-sm font-semibold leading-6">2020</p>
                 <h3 className="-mt-1">
@@ -64,7 +64,7 @@ const ProjectSection = () => {
           <li className="mb-12">
             <div className="group relative grid grid-cols-8 gap-4 transition-all sm:items-center sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
               <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-              <img
+              {/* <Image
                 alt="Headless horseamn"
                 loading="lazy"
                 width="200"
@@ -75,7 +75,7 @@ const ProjectSection = () => {
                 // style="color:transparent"
                 srcset="/_next/image?url=%2Fimages%2Fwriting%2Fheadless.jpeg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fwriting%2Fheadless.jpeg&amp;w=640&amp;q=75 2x"
                 src="/_next/image?url=%2Fimages%2Fwriting%2Fheadless.jpeg&amp;w=640&amp;q=75"
-              />
+              /> */}
               <div className="z-10 col-span-6">
                 <p className="-mt-1 text-sm font-semibold leading-6">2019</p>
                 <h3 className="-mt-1">
