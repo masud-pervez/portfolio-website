@@ -1,6 +1,7 @@
 import { AiFillFacebook } from "react-icons/ai";
 
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
 const apiBaseUrl =
@@ -55,8 +56,28 @@ const appConfig = {
       icon: FiInstagram,
       link: "https://www.instagram.com/_masud_pervez_/",
     },
+    {
+      name: "Twitter",
+      icon: FaXTwitter,
+      link: "https://twitter.com/MPervez71076",
+    },
   ],
   experience: [
+    {
+      company: "Bongo Software Limited ( Remotely )",
+      link: "https://bongo.chat/",
+      date: "Jan 2024 - Present",
+      designetion: "Senior Web Developer",
+      description: `BongoChat, a platform that transcends boundaries and fosters meaningful connections. Dive into conversations that matter, where culture and communication unite seamlessly.`,
+      skill: [
+        "Next js",
+        "Redux",
+        "Vite",
+        "React js",
+        "Tailwind Css",
+        "Matarail Css",
+      ],
+    },
     {
       company: "Semicolon It Solutions",
       link: "https://semicolonit.com/",
@@ -114,6 +135,22 @@ const appConfig = {
       desc: `These systems are used to manage various aspects of school operations,
       including student information, staff management, financial management,
       and communication.`,
+    },
+  ],
+  blogs: [
+    {
+      img: "/blog/blog1.jpg",
+      date: "2024-02-20",
+      title: "Training on Inventory Management (Batch 1)",
+      desc: "Semicolon IT Solutions in collaboration with cereal Systems initiative for South Asia-Mechanization and Extension Activity (CSISA-MEA)",
+      link: "",
+    },
+    {
+      img: "/blog/blog3.jpeg",
+      date: "2024-02-17",
+      title: "Training on Inventory Management (Batch 2)",
+      desc: "Semicolon IT Solutions in collaboration with cereal Systems initiative for South Asia-Mechanization and Extension Activity (CSISA-MEA)",
+      link: "",
     },
   ],
 };
