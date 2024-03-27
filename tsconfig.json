@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/components/ui/Tracker.jsx"  ],
+, "src/components/ui/Tracker.jsx", "src/utils/cn.js"  ],
   "exclude": [
     "node_modules"
   ]
