@@ -121,8 +121,6 @@ export const ProductCard = ({ product, translate }) => {
       >
         <img
           src={product.thumbnail}
-          height="600"
-          width="600"
           className="object-cover rounded-xl absolute h-full w-full inset-0"
           alt={product.title}
         />

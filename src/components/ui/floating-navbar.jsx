@@ -9,11 +9,32 @@ import {
 import { cn } from "../../utils/cn"; // Make sure this path is correct for your project
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 
-const FloatingNav = ({ navItems, className }) => {
+const FloatingNav = ({ className }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(false);
   const pathName = usePathname();
+
+  const navItems = [
+    {
+      name: "Home",
+      link: "/",
+      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Projects",
+      link: "/projects",
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+  ];
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
