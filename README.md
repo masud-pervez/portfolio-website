@@ -8,6 +8,8 @@ This website displays my portfolio, showcasing samples of my work, projects, and
 My name is Masud Pervez. I am a web developer and currently working for a software-based company called Semicolon IT Solutions. Hello! My name is Masud Pervez, and I would like to tell you a little bit about myself. I am a highly skilled web developer with several years of experience under my belt. I have always had a passion for creating and designing websites, and I feel lucky to have found a career that allows me to do what I love every day. Currently, I am working for an innovative software-based company called Semicolon IT Solutions. Here, I can use my skills to create cutting-edge websites and software applications that help to make people's lives easier and more enjoyable. I am proud to be a part of such a talented team, and I look forward to continuing to grow and develop as a web developer in the years to come.
 
 
+
+
 ## Installation
 
 First, install development packages:
